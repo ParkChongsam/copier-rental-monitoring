@@ -129,5 +129,62 @@
 
                                                             ## 개발자
 
+                                                            ## 구현 현황
+                                                         
+                                                            ### 백엔드 (✅ 완료)
+                                                            - ✅ Sequelize ORM으로 모든 데이터베이스 모델 구현
+                                                            -   - Customer (고객)
+                                                                -   - Equipment (장비)
+                                                                    -   - Counter (사용량)
+                                                                        -   - Consumable (소모품)
+                                                                            - - ✅ CRUD 컨트롤러 모든 엔티티 구현
+                                                                              - - ✅ RESTful API 라우트 완성
+                                                                                - - ✅ 데이터베이스 마이그레이션 스크립트 작성
+                                                                                  - - ✅ Express 서버 WebSocket 미들웨어 설정
+                                                                                    - - ✅ Docker & Docker Compose 설정
+                                                                                      - - ✅ Heroku Procfile 설정
+                                                                                       
+                                                                                        - ### 프론트엔드 (개발 예정)
+                                                                                        - - ☐ React 컴포넌트 구조
+                                                                                          - - ☐ Material-UI 기반 대시보드
+                                                                                            - - ☐ 고객 관리 화면
+                                                                                              - - ☐ 장비 추적 화면
+                                                                                                - - ☐ 소모품 재고 관리
+                                                                                                  - - ☐ 사용량 통계 차트
+                                                                                                   
+                                                                                                    - ## 로컬 개발 방법
+                                                                                                   
+                                                                                                    - ### 백엔드 시작
+                                                                                                    - ```bash
+                                                                                                      cd backend/backend
+                                                                                                      npm install
+                                                                                                      npm run migrate  # 데이터베이스 마이그레이션
+                                                                                                      npm start
+                                                                                                      ```
+                                                         
+                                                                                                      ### 프론트엔드 개발
+                                                                                                      ```bash
+                                                                                                      cd frontend
+                                                                                                      npm install
+                                                                                                      npm start
+                                                                                                      ```
+                                                         
+                                                                                                      ### Docker로 전체 실행
+                                                                                                      ```bash
+                                                                                                      docker-compose up
+                                                                                                      ```
+                                                         
+                                                                                                      ## 배포
+                                                         
+                                                                                                      ### Heroku 배포
+                                                                                                      ```bash
+                                                                                                      git push heroku main
+                                                                                                      ```
+                                                         
+                                                                                                      배포 후 자동으로:
+                                                                                                      1. 데이터베이스 마이그레이션 실행
+                                                                                                      2. 2. 백엔드 서버 시작
+                                                                                                         3. 3. 프론트엔드 정적 파일 서빙
+
                                                             Park Chong Sam
                                                             
